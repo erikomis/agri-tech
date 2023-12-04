@@ -45,21 +45,21 @@
                             class="absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white px-6 py-5 shadow dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none lg:dark:bg-transparent">
                             <ul class="block lg:flex">
                                 <li>
-                                    <a href="javascript:void(0)"
+                                    <a href="#home"
                                         class="flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-white lg:ml-12 lg:inline-flex">
                                         Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"
+                                    <a href="#about"
                                         class="flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-white lg:ml-12 lg:inline-flex">
-                                        Payment
+                                        Sobre
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"
+                                    <a href="#contact"
                                         class="flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-white lg:ml-12 lg:inline-flex">
-                                        Features
+                                        contato
                                     </a>
                                 </li>
                             </ul>
@@ -71,7 +71,7 @@
         </div>
     </header>
 
-    <section class="overflow-hidden bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
+    <section class="overflow-hidden bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]" id="about">
         <div class="container mx-auto">
             <div class="flex flex-wrap items-center justify-between -mx-4">
                 <div class="w-full px-4 lg:w-6/12">
@@ -274,17 +274,14 @@
                             brand. Secure a consistent brand image with a domain name that
                             matches your business.
                         </p>
-                        <a href="javascript:void(0)"
-                            class="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md bg-primary px-7 hover:bg-opacity-90">
-                            Get Started
-                        </a>
+                        <livewire:download-app-apk />
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <livewire:contanct-me />
+    <livewire:contanct-me id="contact" />
 
     <footer class="relative z-10 bg-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
         <div class="container mx-auto">
