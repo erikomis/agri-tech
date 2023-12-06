@@ -278,6 +278,7 @@
                         <p class="mb-8 text-base text-body-color dark:text-dark-6">
                             Você ira ter redução dos custos de produção para os agricultores.
                             Melhoria da qualidade do café.
+                            Caso tenha interesse baixe app no botao abaixo.
                         </p>
                         <livewire:download-app-apk />
                     </div>
