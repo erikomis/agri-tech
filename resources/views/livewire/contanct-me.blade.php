@@ -124,7 +124,7 @@
                         <div>
                             <button type="submit"
                                 class="w-full p-3 text-black transition border rounded border-primary bg-primary hover:bg-opacity-90">
-                                Send Message
+                                Enviar mensagem
                             </button>
                         </div>
                     </form>
