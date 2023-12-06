@@ -1,19 +1,18 @@
-<section class="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]" id="contact">
+<section class="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px] p-4" id="contact">
     <div class="container mx-auto">
         <div class="flex flex-wrap -mx-4 lg:justify-between">
             <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
                 <div class="mb-12 max-w-[570px] lg:mb-0">
                     <span class="block mb-4 text-base font-semibold text-primary">
-                        Contact Us
+                        Contamos com uma equipe de profissionais altamente qualificados para atender as necessidades de
+                        nossos clientes.
                     </span>
                     <h2
                         class="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-                        GET IN TOUCH WITH US
+                        Entre em contato
                     </h2>
                     <p class="text-base leading-relaxed mb-9 text-body-color dark:text-dark-6">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        adiqua minim veniam quis nostrud exercitation ullamco
+                        Preencha o formulário abaixo e entraremos em contato o mais breve possível.
                     </p>
 
                     <div class="mb-8 flex w-full max-w-[370px]">
@@ -28,10 +27,10 @@
                         </div>
                         <div class="w-full">
                             <h4 class="mb-1 text-xl font-bold text-dark dark:text-white">
-                                Our Location
+                                Local
                             </h4>
                             <p class="text-base text-body-color dark:text-dark-6">
-                                99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                                ---
                             </p>
                         </div>
                     </div>
@@ -61,10 +60,10 @@
                         </div>
                         <div class="w-full">
                             <h4 class="mb-1 text-xl font-bold text-dark dark:text-white">
-                                Phone Number
+                                Telefone
                             </h4>
                             <p class="text-base text-body-color dark:text-dark-6">
-                                (+62)81 414 257 9980
+                                +55 11 99999-9999
                             </p>
                         </div>
                     </div>
@@ -81,10 +80,10 @@
                         </div>
                         <div class="w-full">
                             <h4 class="mb-1 text-xl font-bold text-dark dark:text-white">
-                                Email Address
+                                Email
                             </h4>
                             <p class="text-base text-body-color dark:text-dark-6">
-                                info@yourdomain.com
+                                agritech@gmail.com
                             </p>
                         </div>
                     </div>
@@ -94,14 +93,14 @@
                 <div class="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
                     <form wire:submit='submit'>
                         <div class="mb-3">
-                            <input type="text" placeholder="Your Name" wire:model='name'
+                            <input type="text" placeholder="Nome" wire:model='name'
                                 class="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6" />
                             @error('name')
                                 <span class="text-red-500">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <input type="email" placeholder="Your Email" wire:model='email'
+                            <input type="email" placeholder="Email" wire:model='email'
                                 class="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6" />
                             @error('email')
                                 <span class="text-red-500">{{ $message }}</span>
@@ -109,14 +108,14 @@
 
                         </div>
                         <div class="mb-3">
-                            <input type="number" placeholder="Your Phone" wire:model='phone'
+                            <input type="number" placeholder="Telefone" wire:model='phone'
                                 class="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6" />
                             @error('phone')
                                 <span class="text-red-500">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="mb-6">
-                            <textarea rows="6" placeholder="Your Message" wire:model='message'
+                            <textarea rows="6" placeholder="Mensagem" wire:model='message'
                                 class="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"></textarea>
                             @error('message')
                                 <span class="text-red-500">{{ $message }}</span>
