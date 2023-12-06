@@ -1,4 +1,4 @@
-<section class="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px] p-4" id="contact">
+<section class="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px] p-4  mx-4" id="contact">
     <div class="container mx-auto">
         <div class="flex flex-wrap -mx-4 lg:justify-between">
             <div class="w-full px-4 lg:w-1/2 xl:w-6/12">

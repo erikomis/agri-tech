@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="max-w-screen-xl min-h-screen m-auto mx-4 ">
+<body class="max-w-screen-xl min-h-screen m-auto">
     @livewireScripts
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -24,7 +24,7 @@
 
     <header x-data="{
         navbarOpen: false
-    }" class="flex items-center w-full bg-white dark:bg-dark">
+    }" class="flex items-center w-full mx-4 bg-white dark:bg-dark">
         <div class="container mx-auto">
             <div class="relative flex items-center justify-between -mx-4">
                 <div class="max-w-full px-4 w-60">
@@ -47,24 +47,21 @@
                             class="absolute right-4 top-[80%] w-full max-w-[250px] rounded-lg z-10 bg-white px-6 py-5 shadow dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none lg:dark:bg-transparent">
                             <ul class="block lg:flex">
                                 <li>
-                                    <a href="#home"
-                                        @click="navbarOpen = false"
-                                        :class="!navbarOpen && 'text-dark dark:text-dark-6' : 'text-body-color dark:text-dark-6'"
+                                    <a href="#home" @click="navbarOpen = false"
+                                        :class="!navbarOpen && 'text-dark dark:text-dark-6': 'text-body-color dark:text-dark-6'"
                                         class="flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-black lg:ml-12 lg:inline-flex">
                                         Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#about"
-                                        @click="navbarOpen = false"
-                                        :class="!navbarOpen && 'text-dark dark:text-dark-6' : 'text-body-color dark:text-dark-6'"
+                                    <a href="#about" @click="navbarOpen = false"
+                                        :class="!navbarOpen && 'text-dark dark:text-dark-6': 'text-body-color dark:text-dark-6'"
                                         class="flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-black lg:ml-12 lg:inline-flex">
                                         Sobre
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#contact"
-                                       @click="navbarOpen = false"
+                                    <a href="#contact" @click="navbarOpen = false"
                                         class="flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-black lg:ml-12 lg:inline-flex">
                                         contato
                                     </a>
@@ -78,7 +75,8 @@
         </div>
     </header>
 
-    <section class="overflow-hidden bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px] p-4" id="about">
+    <section class="overflow-hidden bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px] p-4  mx-4"
+        id="about">
         <div class="container mx-auto">
             <div class="flex flex-wrap items-center justify-between -mx-4">
                 <div class="w-full px-4 lg:w-6/12">
@@ -294,7 +292,7 @@
 
     <livewire:contanct-me id="contact" />
 
-    <footer class="relative z-10 bg-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+    <footer class="relative z-10 bg-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]  mx-4">
         <div class="container mx-auto">
 
         </div>
