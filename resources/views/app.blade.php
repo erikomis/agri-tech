@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="max-w-screen-xl min-h-screen m-auto">
+<body class="max-w-screen-xl min-h-screen m-auto mx-4 ">
     @livewireScripts
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -44,22 +44,27 @@
                             <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-black"></span>
                         </button>
                         <nav :class="!navbarOpen && 'hidden'" id="navbarCollapse"
-                            class="absolute right-4 top-full w-full max-w-[250px] rounded-lg z-10 bg-white px-6 py-5 shadow dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none lg:dark:bg-transparent">
+                            class="absolute right-4 top-[80%] w-full max-w-[250px] rounded-lg z-10 bg-white px-6 py-5 shadow dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none lg:dark:bg-transparent">
                             <ul class="block lg:flex">
                                 <li>
                                     <a href="#home"
+                                        @click="navbarOpen = false"
+                                        :class="!navbarOpen && 'text-dark dark:text-dark-6' : 'text-body-color dark:text-dark-6'"
                                         class="flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-black lg:ml-12 lg:inline-flex">
                                         Home
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#about"
+                                        @click="navbarOpen = false"
+                                        :class="!navbarOpen && 'text-dark dark:text-dark-6' : 'text-body-color dark:text-dark-6'"
                                         class="flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-black lg:ml-12 lg:inline-flex">
                                         Sobre
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#contact"
+                                       @click="navbarOpen = false"
                                         class="flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-black lg:ml-12 lg:inline-flex">
                                         contato
                                     </a>
